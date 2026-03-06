@@ -150,7 +150,7 @@ sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 
 ### NOW COPY THE JOIN COMMAND WHICH APPEARED IN MASTER MACHINE and paste it  THE NODE
-
+## to get the token again in master: kubeadm token create --print-join-command
 e,g kubeadm join 172.31.72.250:6443 --token qyq7z7.5augt56vin856fj  --discovery-token-ca-cert-hash sha256:09a1fc88c9fc8cab5171333546456455dd54cf3d8cb3400362586185308c3
 (do not use above this is just example) 
 
